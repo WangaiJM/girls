@@ -109,6 +109,32 @@
   outline: 3px solid rgb(233 30 99 / 15%);
 }
 
+.contact-form__group input[aria-invalid="true"],
+.contact-form__group textarea[aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.contact-form__error {
+  min-height: 1.8rem;
+  color: #b42318;
+  font-size: 1.3rem;
+}
+
+.contact-form__status {
+  margin-bottom: 1.2rem;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.contact-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .contact-form__submit {
   padding: 1.2rem 2rem;
   border: 0;
@@ -126,6 +152,12 @@
 .contact-form__submit:hover {
   background: var(--primary-color);
   transform: translateY(-2px);
+}
+
+.contact-form__submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
 }
 
 .contact-details address {

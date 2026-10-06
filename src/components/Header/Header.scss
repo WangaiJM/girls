@@ -1,8 +1,10 @@
 .site-header {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 5;
-	background: #fff;
-	border-bottom: 1px solid var(--border-color);
+	background: var(--header-color);
+	box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 14%);
+	color: #fff;
 }
 
 .site-header__brand {
@@ -28,13 +30,19 @@
 }
 
 .site-header__title h1 a {
-	color: var(--accent-color);
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .site-header__title p {
-	margin: 0.4rem 0 0;
-	color: var(--primary-color);
+	display: inline-block;
+	margin: 0.8rem 0 0;
+	padding: 0.3rem 1.2rem;
+	border-radius: 999px;
+	background: var(--secondary-color);
+	color: var(--accent-color);
 	font-size: 1.5rem;
+	font-weight: 700;
 	font-style: italic;
 	text-align: center;
 }

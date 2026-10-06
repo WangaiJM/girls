@@ -49,7 +49,7 @@
 .admission-table-wrapper {
   margin: 1.6rem 0 2.4rem;
   overflow-x: auto;
-  border: 1px solid #e6eef8;
+  border: 1px solid var(--line-color);
   border-radius: 0.8rem;
 }
 
@@ -70,7 +70,7 @@
 .admission-fees th,
 .admission-fees td {
   padding: 1rem;
-  border: 1px solid #e6eef8;
+  border: 1px solid var(--line-color);
   text-align: left;
 }
 
@@ -80,11 +80,11 @@
 }
 
 .admission-fees tbody tr:nth-child(even) {
-  background: #fbfdff;
+  background: var(--surface-muted);
 }
 
 .admission-fees tbody tr:hover {
-  background: #eef5ff;
+  background: var(--surface-hover);
 }
 
 .admission-fees tbody th {
@@ -106,7 +106,7 @@
   padding: 2rem;
   border: 1px solid var(--border-color);
   border-radius: 1rem;
-  background: #fff;
+  background: var(--surface-color);
 }
 
 .admission-download p {

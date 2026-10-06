@@ -16,11 +16,7 @@ const programAreas = [
   {
     title: "STEM Education",
     icon: "🔬",
-    subjects: [
-      "Hands-on Science Experiments",
-      "Basic Coding and ICT Skills",
-      "Robotics and Innovation",
-    ],
+    subjects: ["Hands-on Science Experiments", "Basic Coding and ICT Skills"],
   },
   {
     title: "Talent Development",

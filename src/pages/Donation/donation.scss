@@ -1,0 +1,133 @@
+.donation-page__banner {
+  min-height: clamp(22rem, 38vw, 42rem);
+  background-position: center;
+  background-size: cover;
+}
+
+.donation-page__content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.donation-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(24rem, 0.8fr);
+  align-items: center;
+  gap: clamp(2.4rem, 5vw, 6rem);
+  padding: 2rem 0 4rem;
+}
+
+.donation-page__eyebrow {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.donation-intro__copy h2,
+.donation-impact__heading h2,
+.donation-appeal h2 {
+  margin-bottom: 1.6rem;
+  color: var(--accent-color);
+}
+
+.donation-intro__image {
+  display: block;
+  width: 100%;
+  max-height: 42rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+
+.donation-impact {
+  padding: 3.2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.donation-impact__heading {
+  max-width: 78rem;
+  margin-bottom: 2.4rem;
+}
+
+.donation-impact__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.donation-impact__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.donation-impact__icon {
+  flex: 0 0 auto;
+  font-size: 2.8rem;
+}
+
+.donation-impact__item h3 {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.donation-impact__item p {
+  margin: 0;
+}
+
+.donation-appeal {
+  margin-top: 2.4rem;
+  padding: clamp(2.4rem, 5vw, 4.8rem);
+  border-radius: 1.2rem;
+  background: var(--background-color);
+  text-align: center;
+}
+
+.donation-appeal h2 {
+  color: var(--primary-color);
+}
+
+.donation-appeal p {
+  max-width: 82rem;
+  margin: 0 auto 1.2rem;
+  text-align: center;
+}
+
+.donation-appeal__contact {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 1.2rem 2rem;
+  border-radius: 0.6rem;
+  background: var(--button-color);
+  color: #fff;
+  font-weight: 700;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.donation-appeal__contact:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .donation-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-intro__image {
+    max-height: 34rem;
+  }
+
+  .donation-impact__list {
+    grid-template-columns: 1fr;
+  }
+}

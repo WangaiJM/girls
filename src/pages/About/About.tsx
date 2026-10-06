@@ -1,21 +1,18 @@
 import "./about.scss";
-import agricultureBanner from "../../assets/images/agri (10).jpg";
-import agricultureImage from "../../assets/images/agri (2).jpg";
-import foundationImage from "../../assets/images/cheers (2).jpg";
+const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
 
-const schoolObjectives = [
-  "Increase girls' access to, retention in, and completion of high school so they can enroll in colleges and universities.",
-  "Contribute to the community's social and economic development, reduce poverty, and encourage self-reliance.",
-];
-
-const guidingPrinciples = [
+const parentInvolvement = [
   {
-    title: "Mission",
-    text: "To provide a conducive environment for girls in need and to offer high quality and holistic education that will enable the students to become responsible and reliable members of their families and communities.",
+    title: "Collaborative Decision-Making",
+    text: "Parents are part of the decision-making process. Their input is sought and respected in shaping school policies, programs, and the overall direction of the school. When parents are involved, our students benefit.",
   },
   {
-    title: "Vision",
-    text: "To become a leading girls school in the provision of high quality and holistic education for girls in need.",
+    title: "Academic Clinics",
+    text: "At the start of each academic year, we conduct Academic Clinics for every class. These give parents an opportunity to meet teachers, understand the curriculum, and discuss how best to support their daughters throughout the year.",
+  },
+  {
+    title: "Annual General Meeting (AGM)",
+    text: "Each year, we hold an Annual General Meeting where key school policies and new initiatives are shared and discussed. This meeting encourages open dialogue and helps align school efforts with the expectations and values of our parent community.",
   },
 ];
 
@@ -23,8 +20,9 @@ const About = () => (
   <div className="about-page">
     <section
       className="about-page__banner"
-      style={{ backgroundImage: `url("${agricultureBanner}")` }}
-      aria-label="Agriculture at Petal Girls School"
+      style={{ backgroundImage: `url("${imageBaseUrl}/agri%20(10).jpg")` }}
+      role="img"
+      aria-label="Students at Petal Girls Senior School"
     />
 
     <div className="container about-page__content">
@@ -32,91 +30,104 @@ const About = () => (
         <div className="about-section__copy">
           <h2>About Us</h2>
           <p>
-            Petal Girls School is situated in Mirera village, Naivasha Sub
-            County, approximately 10 kilometers from Naivasha town. The school
-            serves the underprivileged Mirera community, where poverty prevents
-            many youngsters from receiving an education.
+            Petal Girls Senior School (PGSS) has adopted the new
+            Competency-Based Curriculum (CBC) and caters for Senior School
+            students in Grades 10, 11, and 12.
           </p>
           <p>
-            Petal Girls School was founded to meet the educational needs of
-            girls who struggle to access and complete secondary school because
-            of early marriages and pregnancies. The school and its boarding
-            facilities help girls complete high school and open opportunities
-            for further study at colleges and universities. A thorough education
-            equips students with the opportunities and knowledge to reach their
-            goals, find employment, and break cycles of poverty and early
-            marriage.
+            Our CBC approach ensures that every learner is actively engaged,
+            assessed through practical tasks, and empowered with 21st-century
+            skills. We believe in learning by doing, fostering creativity, and
+            instilling confidence in our students.
           </p>
-          <h3>The Objectives</h3>
-          <ul className="about-page__objectives">
-            {schoolObjectives.map((objective) => (
-              <li key={objective}>{objective}</li>
-            ))}
-          </ul>
+          <p>
+            With well-equipped facilities and a passionate team of educators, we
+            strive to inspire excellence, build confidence, and unlock each
+            student’s full potential. Our approach blends contemporary teaching
+            methods with strong values to help students thrive academically and
+            become confident, capable leaders.
+          </p>
         </div>
         <img
           className="about-section__image"
-          src={agricultureImage}
-          alt="Students learning about agriculture"
+          src={`${imageBaseUrl}/graduate%20(3).jpg`}
+          alt="Petal Girls students celebrating their achievements"
         />
       </section>
 
-      <section className="about-section about-section--foundation">
+      <section className="about-section about-section--mission">
         <div className="about-section__copy">
-          <h2>Barbara Dougan Foundation</h2>
+          <h2>Our Mission</h2>
           <p>
-            We extend our deepest gratitude to the{" "}
-            <strong>Barbara Dougan Foundation</strong> for its unwavering
-            support and commitment to empowering girls through education. Your
-            generosity has transformed lives at Petal Girls School, providing
-            essential resources, scholarships, and a nurturing learning
-            environment for girls who would otherwise be denied an education.
-            Because of your continued partnership, these young learners now have{" "}
-            <strong>hope, opportunity, and a brighter future.</strong>
+            To provide a conducive environment for girls in need and to offer
+            high-quality, holistic education that enables students to become
+            responsible and reliable members of their families and communities.
           </p>
+          <h2>Our Vision</h2>
           <p>
-            Thank you for believing in our mission and standing with us in this
-            journey of change.
+            To become a leading girls school in the provision of high-quality,
+            holistic education for girls in need.
           </p>
+          <h2>Our Objectives</h2>
           <p>
-            <strong>
-              To learn more about their work and ongoing support for our school,
-              visit:
-            </strong>
+            To increase girls’ access to, retention in, and completion of high
+            school, enabling them to enrol in colleges and universities. Their
+            self-reliance can stimulate community economic development and help
+            reduce poverty.
           </p>
-          <a
-            className="about-page__foundation-link"
-            href="https://barbaradouganfoundation.org/petalcboschool"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Barbara Dougan Foundation – Petal CBO School
-          </a>
         </div>
         <img
           className="about-section__image"
-          src={foundationImage}
-          alt="Petal Girls School community celebrating together"
+          src={`${imageBaseUrl}/additions/assembly2.jpg`}
+          alt="Students gathered at a Petal Girls School assembly"
         />
       </section>
 
-      <div className="about-page__principles">
-        {guidingPrinciples.map(({ title, text }) => (
-          <section className="about-principle" key={title}>
-            <h2>{title}</h2>
-            <p>{text}</p>
-          </section>
-        ))}
-        <section className="about-principle">
-          <h2>Core Values</h2>
+      <section className="about-section about-section--bursary">
+        <div className="about-section__copy">
+          <h2>Our Bursary Scheme</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-            obcaecati rerum, facilis pariatur deserunt, aut, blanditiis libero
-            quam necessitatibus officiis ad repellat aliquid ullam. Porro,
-            pariatur. Hic sed natus corporis?
+            Through the generosity of its donors, PGSS is able to offer a
+            limited number of bursaries to girls from disadvantaged homes. These
+            are awarded on a discretionary basis and range from 25% to, in
+            exceptional cases, up to 75% of fees for day and boarding students.
+            Applicants are asked to provide details of their personal
+            circumstances and attend an interview at the school.
           </p>
-        </section>
-      </div>
+          <p>
+            Instead of, or in addition to, a bursary, PGSS may offer a payment
+            plan to enable payment of any fees not covered by the bursary.
+          </p>
+        </div>
+      </section>
+
+      <section className="about-section about-section--parents">
+        <div className="about-section__copy">
+          <h2>Parent Involvement at Petal Girls Senior School</h2>
+          <img
+            className="about-section__image about-section__image--inline"
+            src={`${imageBaseUrl}/community%20(1).jpg`}
+            alt="Parents and members of the school community meeting together"
+          />
+          <p>
+            At PGSS, we believe a strong partnership between parents and the
+            school community is essential for success. We are proud to cultivate
+            an environment where parents are informed, engaged, and empowered to
+            play a meaningful role in school life.
+          </p>
+          {parentInvolvement.map(({ title, text }) => (
+            <div className="about-section__parent-topic" key={title}>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))}
+          <p>
+            We thank all our parents for their ongoing support and commitment.
+            Together, we continue to nurture confident, capable, and
+            compassionate young women.
+          </p>
+        </div>
+      </section>
     </div>
   </div>
 );

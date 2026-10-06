@@ -44,7 +44,7 @@
 }
 
 .parallax {
-  min-height: clamp(24rem, 30vw, 35rem);
+  min-height: clamp(36rem, 45vw, 56rem);
   width: 100vw;
   margin: 2rem calc(50% - 50vw) 4rem;
   background-position: center;
@@ -188,7 +188,7 @@
   }
 
   .parallax {
-    min-height: 22rem;
+    min-height: clamp(30rem, 60vw, 42rem);
     background-attachment: scroll;
   }
 }

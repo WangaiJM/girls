@@ -1,56 +1,86 @@
 .carousel {
-	position: relative;
-	width: 100%;
-	height: clamp(28rem, 52vw, 62rem);
-	overflow: hidden;
-	background: #231a22;
+  position: relative;
+  width: 100%;
+  height: clamp(28rem, 52vw, 62rem);
+  overflow: hidden;
+  background: #231a22;
 }
 
 .carousel__images {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	transition: transform 550ms ease-in-out;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 550ms ease-in-out;
 }
 
 .carousel__images img {
-	flex: 0 0 100%;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel__control {
-	position: absolute;
-	top: 50%;
-	display: grid;
-	width: 4.8rem;
-	height: 4.8rem;
-	place-items: center;
-	transform: translateY(-50%);
-	border: 1px solid rgb(255 255 255 / 65%);
-	border-radius: 50%;
-	background: rgb(26 35 126 / 65%);
-	color: #fff;
-	font-size: 2rem;
-	cursor: pointer;
-	transition: background-color 160ms ease;
+  position: absolute;
+  top: 50%;
+  display: grid;
+  width: 4.8rem;
+  height: 4.8rem;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 1px solid rgb(255 255 255 / 65%);
+  border-radius: 50%;
+  background: rgb(26 35 126 / 65%);
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 160ms ease;
 }
 
 .carousel__control:hover {
-	background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .carousel__control--previous {
-	left: clamp(1.2rem, 4vw, 4rem);
+  left: clamp(1.2rem, 4vw, 4rem);
 }
 
 .carousel__control--next {
-	right: clamp(1.2rem, 4vw, 4rem);
+  right: clamp(1.2rem, 4vw, 4rem);
+}
+
+.carousel__college-link {
+  position: absolute;
+  bottom: clamp(2rem, 5vw, 4rem);
+  left: 50%;
+  padding: 1.2rem 2rem;
+  transform: translateX(-50%);
+  border: 1px solid rgb(255 255 255 / 75%);
+  border-radius: 999px;
+  background: rgb(214 51 132 / 92%);
+  box-shadow: 0 0.6rem 2rem rgb(0 0 0 / 20%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.carousel__college-link:hover {
+  transform: translate(-50%, -2px);
+  background: var(--accent-color);
+}
+
+.carousel__college-link:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.carousel__images {
-		transition: none;
-	}
+  .carousel__images {
+    transition: none;
+  }
 }

@@ -63,6 +63,16 @@ const Carousel = () => {
       >
         &#10095;
       </button>
+      <a
+        className="carousel__college-link"
+        href="https://petalladiesvtc.ac.ke/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Petal Ladies Vocational Training Centre website (opens in a new tab)"
+      >
+        Visit Our College
+        <span aria-hidden="true"> ↗</span>
+      </a>
     </section>
   );
 };

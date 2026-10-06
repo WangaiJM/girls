@@ -1,30 +1,28 @@
-# Petal Girls Senior School
+# Petal Girls School
 
 **With God We Triumph**
 
-Petal Girls Senior School (PGSS) is a girls’ senior school serving learners in Grades 10, 11, and 12. We aim to provide girls in need with a safe, supportive environment and a high-quality, holistic education that helps them grow into confident, responsible members of their families and communities.
+Petal Girls School provides education and opportunities for girls in the community. Its work includes Petal Girls Senior School and Petal Vocational Training Centre. We aim to create a safe, supportive environment where learners can build knowledge, confidence, practical skills, and opportunities for the future.
 
 ## Our Mission
 
-To provide a conducive environment for girls in need and offer high-quality, holistic education that enables students to become responsible and reliable members of their families and communities.
+To provide a conducive environment for girls and offer high-quality, holistic education that enables learners to become responsible and reliable members of their families and communities.
 
 ## Our Vision
 
-To become a leading girls’ school in providing high-quality, holistic education for girls in need.
+To provide high-quality, holistic education and learning opportunities that help girls reach their potential.
 
 ## Our Objectives
 
-We work to increase girls’ access to, retention in, and completion of high school, enabling them to continue to colleges and universities. By supporting students’ education and self-reliance, we aim to contribute to community development and help reduce poverty.
+We work to expand girls’ access to education, support their continued learning, and help them develop the skills and self-reliance to contribute to their communities.
 
 ## Learning at PGSS
 
-PGSS has adopted the Competency-Based Curriculum (CBC). Learning is designed to engage students through practical tasks, creativity, contemporary teaching methods, and strong values. Our programs include core learning areas, STEM, talent development, leadership, and life skills.
+The Senior School follows the Competency-Based Curriculum (CBC). Learning engages students through practical tasks, creativity, contemporary teaching methods, and strong values. Programs include core learning areas, STEM, talent development, leadership, and life skills. Vocational training provides additional opportunities to develop practical skills.
 
 ## Supporting Our Students
 
-Through donor support, the school offers a limited number of bursaries to girls from disadvantaged homes. Awards are discretionary and may cover between 25% and, in exceptional cases, 75% of day or boarding fees. A payment plan may also be available for fees not covered by a bursary. Applicants provide details of their circumstances and attend an interview at the school.
-
-We believe that a strong partnership between parents and the school community is essential. Academic Clinics, collaborative decision-making, and the Annual General Meeting provide opportunities for families to engage in school life and support students’ progress.
+Donor support helps the school provide learning opportunities and assistance to students. We believe a strong partnership between parents and the school community is essential, and encourage families to engage in school life and support learners’ progress.
 
 ## About This Website
 
@@ -48,16 +46,10 @@ npm run lint
 
 ### Contact form
 
-The Contact page validates entries in the browser and sends valid submissions to Formspree. The local ignored `.env.local` file should contain the form endpoint:
-
-```env
-VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/xvkzgwdl
-```
-
-In Formspree, configure and verify **jahkeyjohn@gmail.com** as the notification recipient. Check the Formspree Spam section and Gmail’s Spam folder if test notifications are filtered. Never put email passwords or private credentials in the frontend. Since the endpoint is part of a public client-side site, enable Formspree’s spam protection.
+The Contact page validates entries in the browser and sends valid submissions to Formspree. Its endpoint is configured locally using the `VITE_FORMSPREE_ENDPOINT` environment variable. Keep local configuration out of Git, enable Formspree’s spam protection, and never add passwords, private credentials, student records, or other confidential information to this public repository.
 
 ### Deploy to Host Africa shared hosting
 
-Run `npm run build`, then upload the contents of the generated `dist` directory to the hosting account’s website document root. Vite embeds `VITE_FORMSPREE_ENDPOINT` at build time, so set the correct environment value before building the version you deploy.
+Run `npm run build`, then upload the contents of the generated `dist` directory to the hosting account’s website document root. Vite reads `VITE_FORMSPREE_ENDPOINT` at build time, so configure the deployment environment before creating the production build. Note that client-side form endpoints are visible in the published site and must not contain private credentials.
 
 > **Image assets:** Large school photos under `src/assets/images/` are excluded by `.gitignore` to keep Git pushes small. Keep the local assets available when building, or arrange separate image hosting before building from a fresh clone.

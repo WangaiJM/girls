@@ -1,0 +1,191 @@
+.home-page {
+	padding-top: 4rem;
+}
+
+.welcome-section,
+.principal-section {
+	display: grid;
+	grid-template-columns: 1.25fr 0.75fr;
+	align-items: center;
+	gap: clamp(2.4rem, 5vw, 6rem);
+	padding: 2rem 0 4rem;
+}
+
+.welcome-section h2,
+.donation-section h2,
+.principal-section h2,
+.school-numbers h2 {
+	margin-bottom: 1.6rem;
+	color: var(--accent-color);
+	font-size: clamp(2.4rem, 3vw, 3.2rem);
+	line-height: 1.2;
+}
+
+.welcome-section p,
+.donation-section > p,
+.principal-section p {
+	line-height: 1.8;
+}
+
+.welcome-section__image,
+.principal-section__portrait img {
+	display: block;
+	width: 100%;
+	max-height: 46rem;
+	border-radius: 1.4rem;
+	object-fit: cover;
+	box-shadow: 0 1.2rem 3rem rgb(26 35 126 / 14%);
+}
+
+.parallax {
+	min-height: 24rem;
+	margin: 2rem calc((80vw - 100%) / -2) 4rem;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.parallax--one {
+	background-image: linear-gradient(rgb(26 35 126 / 15%), rgb(26 35 126 / 15%)), url("../../assets/images/agri (3).jpg");
+}
+
+.parallax--two {
+	background-image: linear-gradient(rgb(26 35 126 / 15%), rgb(26 35 126 / 15%)), url("../../assets/images/games (3).jpg");
+}
+
+.parallax--three {
+	background-image: linear-gradient(rgb(26 35 126 / 15%), rgb(26 35 126 / 15%)), url("../../assets/images/class (4).jpg");
+}
+
+.donation-section {
+	padding: 2rem 0 4rem;
+}
+
+.donation-section__list {
+	display: grid;
+	gap: 1.2rem;
+	margin: 2rem 0;
+}
+
+.donation-section__list li {
+	padding: 1.4rem 1.6rem;
+	border-left: 0.4rem solid var(--primary-color);
+	border-radius: 0 0.8rem 0.8rem 0;
+	background: #fff;
+	box-shadow: 0 0.4rem 1.4rem rgb(26 35 126 / 7%);
+}
+
+.donation-section__callout {
+	margin-top: 2.8rem;
+	padding: 2.4rem;
+	border-radius: 1.2rem;
+	background: #ffedf2;
+	text-align: center;
+}
+
+.donation-section__callout p {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	margin: 1rem 0 1.6rem;
+	padding: 1.2rem 2.2rem;
+	border-radius: 0.6rem;
+	background: var(--button-color);
+	color: #fff;
+	font-weight: 700;
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+	transform: translateY(-2px);
+	background: var(--accent-color);
+}
+
+.principal-section {
+	grid-template-columns: 0.65fr 1.35fr;
+}
+
+.principal-section__portrait img {
+	margin-bottom: 1rem;
+}
+
+.principal-section__portrait p {
+	color: var(--accent-color);
+	font-weight: 700;
+}
+
+.principal-section__message h3 {
+	margin: 0 0 1.2rem;
+	color: var(--primary-color);
+	font-size: 1.8rem;
+}
+
+.school-numbers {
+	padding: 2rem 0 4rem;
+	text-align: center;
+}
+
+.school-numbers__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+}
+
+.school-numbers__card {
+	padding: 2.4rem 1.6rem;
+	border: 1px solid var(--border-color);
+	border-radius: 1.2rem;
+	background: #fff;
+	box-shadow: 0 0.8rem 2.4rem rgb(26 35 126 / 8%);
+}
+
+.school-numbers__card p {
+	margin: 0;
+	text-align: center;
+}
+
+.school-numbers__value {
+	color: var(--primary-color);
+	font-size: 3.8rem;
+	font-weight: 800;
+}
+
+@media (max-width: 768px) {
+	.home-page {
+		padding-top: 2rem;
+	}
+
+	.welcome-section,
+	.principal-section {
+		grid-template-columns: 1fr;
+	}
+
+	.welcome-section__image {
+		max-height: 38rem;
+	}
+
+	.principal-section__portrait {
+		max-width: 42rem;
+		margin: 0 auto;
+	}
+
+	.parallax {
+		min-height: 18rem;
+		margin-right: calc((100vw - 100%) / -2);
+		margin-left: calc((100vw - 100%) / -2);
+		background-attachment: scroll;
+	}
+}
+
+@media (max-width: 560px) {
+	.school-numbers__grid {
+		grid-template-columns: 1fr;
+		gap: 1.2rem;
+	}
+
+	.donation-section__callout {
+		padding: 2rem 1.4rem;
+	}
+}

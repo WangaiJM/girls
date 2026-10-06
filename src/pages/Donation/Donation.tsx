@@ -28,6 +28,38 @@ const waysToHelp = [
   },
 ];
 
+const partners = [
+  {
+    name: "Barry Topple and Family",
+    paragraphs: [
+      "Petal Girls Senior School and Petal Vocational Training Centre extend our sincere gratitude to Barry Topple and his family for their extraordinary generosity. Their substantial donation will help us enhance educational programs and resources for our students.",
+      "Their contribution is an investment in our students’ future, providing tools and opportunities to succeed. We are deeply thankful for their support and commitment to making a meaningful difference.",
+      "On behalf of our students, faculty, and community, thank you to Barry Topple and his family for their kindness and generosity.",
+    ],
+  },
+  {
+    name: "Barbara Dougan Foundation",
+    paragraphs: [
+      "We extend our deepest gratitude to the Barbara Dougan Foundation for its unwavering support and commitment to empowering girls through education. Its generosity has provided essential resources, scholarships, and a nurturing learning environment for girls who might otherwise be denied an education.",
+      "Because of this continued partnership, our learners have hope, opportunity, and a brighter future. Thank you for believing in our mission and standing with us in this journey of change.",
+    ],
+    link: {
+      label: "Barbara Dougan Foundation – Petal CBO School",
+      href: "https://barbaradouganfoundation.org/petalcboschool",
+    },
+  },
+  {
+    name: "Global Development Group",
+    paragraphs: [
+      "We are proud to be supported by Global Development Group (GDG), an organization committed to sustainable development and education empowerment. This partnership helps us provide quality education, boarding facilities, and opportunities for girls to break the cycle of poverty.",
+    ],
+    link: {
+      label: "Global Development Group Australia – Petal School",
+      href: "https://globaldevelopmentgroup.org/Projects/Details?id=174&projectName=Petal%20Girls%20High%20School&projectNum=J991N&FromShortUrl=False&source=pweb",
+    },
+  },
+];
+
 const Donation = () => (
   <div className="donation-page">
     <div
@@ -43,13 +75,12 @@ const Donation = () => (
           <p className="donation-page__eyebrow">Give her a chance</p>
           <h2 id="donation-title">Give Her a Chance—Transform a Life Today</h2>
           <p>
-            At Petal Girls School, we see the{" "}
-            <strong>dreams in their eyes—young</strong>, determined girls who
-            long for an education but face unimaginable hardships. Many come
-            from families struggling to afford a meal, let alone school fees.
-            Some have lost parents; others are fighting against traditions that
-            do not believe in educating girls. Yet, despite it all, they hold on
-            to hope.
+            At PGSS, we see the <strong>dreams in their eyes—young</strong>,
+            determined girls who long for an education but face unimaginable
+            hardships. Many come from families struggling to afford a meal, let
+            alone school fees. Some have lost parents; others are fighting
+            against traditions that do not believe in educating girls. Yet,
+            despite it all, they hold on to hope.
           </p>
         </div>
         <img
@@ -106,12 +137,51 @@ const Donation = () => (
           beyond poverty.
         </p>
         <p>
-          For donations or partnerships, please reach out to us. Your kindness
-          today will shape a girl’s tomorrow. Thank you for believing in them.
+          For donations or partnerships, please reach out to us by phone or
+          email. Your kindness today will shape a girl’s tomorrow. Thank you for
+          believing in them.
         </p>
-        <a className="donation-appeal__contact" href="tel:+254723819205">
-          Call us: +254 723 819 205
-        </a>
+        <div className="donation-appeal__contacts">
+          <a className="donation-appeal__contact" href="tel:+254768455739">
+            Call: +254 768 455 739
+          </a>
+          <a className="donation-appeal__contact" href="tel:+254723819205">
+            Call: +254 723 819 205
+          </a>
+          <a
+            className="donation-appeal__contact donation-appeal__contact--email"
+            href="mailto:petalghschool@gmail.com"
+          >
+            Email: petalghschool@gmail.com
+          </a>
+        </div>
+      </section>
+
+      <section
+        className="donation-partners"
+        aria-labelledby="donation-partners-title"
+      >
+        <header className="donation-partners__heading">
+          <p className="donation-page__eyebrow">
+            Together we make a difference
+          </p>
+          <h2 id="donation-partners-title">Thanks To Our Partners</h2>
+        </header>
+        <div className="donation-partners__list">
+          {partners.map(({ name, paragraphs, link }) => (
+            <article className="donation-partner" key={name}>
+              <h3>{name}</h3>
+              {paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+              {link && (
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  {link.label}
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
       </section>
     </div>
   </div>

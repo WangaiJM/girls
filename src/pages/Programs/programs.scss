@@ -1,10 +1,128 @@
 .programs-page {
   min-height: 40vh;
+}
+
+.programs-page__banner {
+  min-height: clamp(22rem, 38vw, 42rem);
+  background-position: center;
+  background-size: cover;
+}
+
+.programs-page__content {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.programs-page h1 {
+.programs-page__heading {
+  max-width: 86rem;
+  margin: 0 auto 3.6rem;
+  text-align: center;
+}
+
+.programs-page__eyebrow {
+  margin-bottom: 0.8rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programs-page__heading h2 {
+  margin-bottom: 1.6rem;
+  color: var(--accent-color);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+}
+
+.programs-page__heading > p:last-child,
+.programs-page__approach p {
+  text-align: center;
+}
+
+.programs-page__transition-notice {
+  margin: 2rem auto;
+  padding: 1.6rem 2rem;
+  border-left: 0.4rem solid var(--primary-color);
+  border-radius: 0.6rem;
+  background: #fff;
+  color: var(--accent-color);
+  text-align: left;
+}
+
+.programs-page__subheading {
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.program-area-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.program-area-card {
+  padding: 2.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.program-area-card__icon {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 3rem;
+}
+
+.program-area-card h4 {
+  margin-bottom: 1.2rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.program-area-card ul {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.program-area-card li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.program-area-card li::before {
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  content: "•";
+  font-weight: 700;
+}
+
+.programs-page__approach {
+  margin-top: 3.6rem;
+  padding: clamp(2.4rem, 5vw, 4rem);
+  border-radius: 1.2rem;
+  background: var(--background-color);
+}
+
+.programs-page__approach h3 {
   margin-bottom: 1.2rem;
   color: var(--accent-color);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.programs-page__closing {
+  margin-top: 2rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .program-area-grid {
+    grid-template-columns: 1fr;
+  }
 }

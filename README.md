@@ -1,94 +1,63 @@
-# React + TypeScript + Vite
+# Petal Girls Senior School
 
-## Contact form (Formspree)
+**With God We Triumph**
 
-The contact page validates fields on blur and submits directly to Formspree. To
-connect it to the school inbox:
+Petal Girls Senior School (PGSS) is a girls’ senior school serving learners in Grades 10, 11, and 12. We aim to provide girls in need with a safe, supportive environment and a high-quality, holistic education that helps them grow into confident, responsible members of their families and communities.
 
-1. In Formspree, open the test form and set its notification/recipient email to
-   `jahkeyjohn@gmail.com`. Verify that address when Formspree asks.
-2. Copy the form endpoint shown in Formspree (it looks like
-   `https://formspree.io/f/xxxxxxxx`).
-3. Create a local `.env.local` file in the project root containing:
+## Our Mission
 
-`VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/xxxxxxxx`
+To provide a conducive environment for girls in need and offer high-quality, holistic education that enables students to become responsible and reliable members of their families and communities.
 
-Replace the sample endpoint with your real one. Do not put Gmail passwords or
-other credentials in this file or in frontend code. 4. Build the site after setting the endpoint. For Host Africa shared hosting,
-upload the generated `dist` contents; the endpoint is embedded in the static
-JavaScript bundle during build.
+## Our Vision
 
-`.env.local` is ignored by Git. The endpoint is public in a client-side form, so
-Formspree spam protection should be enabled in its dashboard.
+To become a leading girls’ school in providing high-quality, holistic education for girls in need.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Our Objectives
 
-Currently, two official plugins are available:
+We work to increase girls’ access to, retention in, and completion of high school, enabling them to continue to colleges and universities. By supporting students’ education and self-reliance, we aim to contribute to community development and help reduce poverty.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Learning at PGSS
 
-## React Compiler
+PGSS has adopted the Competency-Based Curriculum (CBC). Learning is designed to engage students through practical tasks, creativity, contemporary teaching methods, and strong values. Our programs include core learning areas, STEM, talent development, leadership, and life skills.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Supporting Our Students
 
-## Expanding the ESLint configuration
+Through donor support, the school offers a limited number of bursaries to girls from disadvantaged homes. Awards are discretionary and may cover between 25% and, in exceptional cases, 75% of day or boarding fees. A payment plan may also be available for fees not covered by a bursary. Applicants provide details of their circumstances and attend an interview at the school.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+We believe that a strong partnership between parents and the school community is essential. Academic Clinics, collaborative decision-making, and the Annual General Meeting provide opportunities for families to engage in school life and support students’ progress.
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## About This Website
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This responsive school website is built with React, TypeScript, Vite, and SCSS. It includes information about the school, admissions, programmes, facilities, donations, contacts, and a photo gallery.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+### Run locally
+
+Install dependencies, then start the Vite development server:
+
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Check the production build and lint the project with:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```sh
+npm run build
+npm run lint
 ```
+
+### Contact form
+
+The Contact page validates entries in the browser and sends valid submissions to Formspree. The local ignored `.env.local` file should contain the form endpoint:
+
+```env
+VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/xvkzgwdl
+```
+
+In Formspree, configure and verify **jahkeyjohn@gmail.com** as the notification recipient. Check the Formspree Spam section and Gmail’s Spam folder if test notifications are filtered. Never put email passwords or private credentials in the frontend. Since the endpoint is part of a public client-side site, enable Formspree’s spam protection.
+
+### Deploy to Host Africa shared hosting
+
+Run `npm run build`, then upload the contents of the generated `dist` directory to the hosting account’s website document root. Vite embeds `VITE_FORMSPREE_ENDPOINT` at build time, so set the correct environment value before building the version you deploy.
+
+> **Image assets:** Large school photos under `src/assets/images/` are excluded by `.gitignore` to keep Git pushes small. Keep the local assets available when building, or arrange separate image hosting before building from a fresh clone.

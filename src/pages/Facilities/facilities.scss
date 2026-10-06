@@ -56,7 +56,15 @@
   padding: 1.2rem 1.4rem 1.2rem 4rem;
   border: 1px solid var(--border-color);
   border-radius: 0.8rem;
-  background: #fff;
+  background: var(--surface-muted, #fff8fa);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.facility-section__list li:hover {
+  background: var(--surface-hover, #fff0f4);
+  transform: translateX(0.3rem);
 }
 
 .facility-section__list li::before {

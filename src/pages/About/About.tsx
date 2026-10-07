@@ -20,7 +20,7 @@ const About = () => (
   <div className="about-page">
     <section
       className="about-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/agri%20(10).jpg")` }}
+      style={{ backgroundImage: `url("${imageBaseUrl}/agri_10.jpg")` }}
       role="img"
       aria-label="Students at Petal Girls Senior School"
     />
@@ -50,7 +50,7 @@ const About = () => (
         </div>
         <img
           className="about-section__image"
-          src={`${imageBaseUrl}/graduate%20(3).jpg`}
+          src={`${imageBaseUrl}/graduate_3.jpg`}
           alt="Petal Girls students celebrating their achievements"
         />
       </section>
@@ -106,7 +106,7 @@ const About = () => (
           <h2>Parent Involvement at Petal Girls Senior School</h2>
           <img
             className="about-section__image about-section__image--inline"
-            src={`${imageBaseUrl}/community%20(1).jpg`}
+            src={`${imageBaseUrl}/community_1.jpg`}
             alt="Parents and members of the school community meeting together"
           />
           <p>

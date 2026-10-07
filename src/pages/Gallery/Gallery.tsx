@@ -3,32 +3,32 @@ import "./gallery.scss";
 const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
 
 const galleryImages = [
-  { fileName: "agri (1).jpg", alt: "Students taking part in agriculture" },
-  { fileName: "cheers (1).jpg", alt: "Students celebrating together" },
+  { fileName: "agri_1.jpg", alt: "Students taking part in agriculture" },
+  { fileName: "cheers_1.jpg", alt: "Students celebrating together" },
   {
-    fileName: "lab (10).jpg",
+    fileName: "lab_10.jpg",
     alt: "Students learning in the science laboratory",
   },
-  { fileName: "class (10).jpg", alt: "Students learning in a classroom" },
-  { fileName: "agri (10).jpg", alt: "School agriculture activity" },
+  { fileName: "class_10.jpg", alt: "Students learning in a classroom" },
+  { fileName: "agri_10.jpg", alt: "School agriculture activity" },
   {
-    fileName: "cheers (2).jpg",
+    fileName: "cheers_2.jpg",
     alt: "Petal Girls School community celebration",
   },
-  { fileName: "cheers (3).jpg", alt: "Students sharing a joyful moment" },
-  { fileName: "class (11).jpg", alt: "A classroom at Petal Girls School" },
-  { fileName: "class (8).jpg", alt: "Students working in class" },
+  { fileName: "cheers_3.jpg", alt: "Students sharing a joyful moment" },
+  { fileName: "class_11.jpg", alt: "A classroom at Petal Girls School" },
+  { fileName: "class_8.jpg", alt: "Students working in class" },
   {
-    fileName: "community (1).jpg",
+    fileName: "community_1.jpg",
     alt: "Petal Girls School community gathering",
   },
-  { fileName: "community (2).jpg", alt: "School community activity" },
+  { fileName: "community_2.jpg", alt: "School community activity" },
   {
-    fileName: "community (3).jpg",
+    fileName: "community_3.jpg",
     alt: "Students and community members together",
   },
-  { fileName: "community (4).jpg", alt: "Petal Girls School community event" },
-  { fileName: "class (6).jpg", alt: "Learning at Petal Girls School" },
+  { fileName: "community_4.jpg", alt: "Petal Girls School community event" },
+  { fileName: "class_6.jpg", alt: "Learning at Petal Girls School" },
   { fileName: "cake_logo.jpg", alt: "Petal Girls School celebration cake" },
 ].map((image) => ({
   ...image,

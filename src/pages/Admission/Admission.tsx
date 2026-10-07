@@ -47,7 +47,7 @@ const Admission = () => (
   <div className="admission-page">
     <div
       className="admission-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/girls%20(1).jpg")` }}
+      style={{ backgroundImage: `url("${imageBaseUrl}/girls_1.jpg")` }}
       role="img"
       aria-label="Students at Petal Girls Senior School"
     />

@@ -42,7 +42,7 @@ const Programs = () => (
   <div className="programs-page">
     <div
       className="programs-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/graduate%20(4).jpg")` }}
+      style={{ backgroundImage: `url("${imageBaseUrl}/graduate_4.jpg")` }}
       role="img"
       aria-label="A Petal Girls School graduation celebration"
     />

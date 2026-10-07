@@ -1,10 +1,10 @@
 import "./carousel.scss";
 import { useEffect, useState } from "react";
-import agriImage from "../../assets/images/agri (5).jpg";
-import gamesImage from "../../assets/images/games (6).jpg";
-import labImage from "../../assets/images/lab (5).jpg";
-import labSecondImage from "../../assets/images/lab (2).jpg";
-import staffImage from "../../assets/images/staff (3).jpg";
+import agriImage from "../../assets/images/agri_5.jpg";
+import gamesImage from "../../assets/images/games_6.jpg";
+import labImage from "../../assets/images/lab_5.jpg";
+import labSecondImage from "../../assets/images/lab_2.jpg";
+import staffImage from "../../assets/images/staff_3.jpg";
 
 const slides = [
   { src: staffImage, alt: "Petal Girls School staff" },

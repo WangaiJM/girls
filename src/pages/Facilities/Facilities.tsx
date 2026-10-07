@@ -10,13 +10,13 @@ const facilitySections = [
       "Information and Communication Technology (ICT) labs",
       "Classrooms with interactive Promethean Boards",
     ],
-    image: `${imageBaseUrl}/lab%20(8).jpg`,
+    image: `${imageBaseUrl}/lab_8.jpg`,
     imageAlt: "Science laboratory facilities at Petal Girls School",
   },
   {
     title: "Sports Facilities",
     items: ["Shaded outdoor play areas", "Art, Music and Drama room"],
-    image: `${imageBaseUrl}/games%20(7).jpg`,
+    image: `${imageBaseUrl}/games_7.jpg`,
     imageAlt: "Students taking part in school sports and activities",
   },
 ];
@@ -25,7 +25,7 @@ const Facilities = () => (
   <div className="facilities-page">
     <div
       className="facilities-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/class%20(4).jpg")` }}
+      style={{ backgroundImage: `url("${imageBaseUrl}/class_4.jpg")` }}
       role="img"
       aria-label="Learning at Petal Girls School"
     />

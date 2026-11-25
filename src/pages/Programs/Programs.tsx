@@ -1,6 +1,5 @@
 import "./programs.scss";
-
-const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
+import graduationImage from "../../assets/images/graduate_4.jpg";
 
 const programAreas = [
   {
@@ -42,9 +41,9 @@ const Programs = () => (
   <div className="programs-page">
     <div
       className="programs-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/graduate_4.jpg")` }}
+      style={{ backgroundImage: `url("${graduationImage}")` }}
       role="img"
-      aria-label="A Petal Girls School graduation celebration"
+      aria-label="A Petal Girls Senior School graduation celebration"
     />
 
     <div className="container programs-page__content">

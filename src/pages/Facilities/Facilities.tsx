@@ -1,6 +1,7 @@
 import "./facilities.scss";
-
-const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
+import classroomImage from "../../assets/images/class_4.jpg";
+import gamesImage from "../../assets/images/games_7.jpg";
+import labImage from "../../assets/images/lab_8.jpg";
 
 const facilitySections = [
   {
@@ -10,13 +11,13 @@ const facilitySections = [
       "Information and Communication Technology (ICT) labs",
       "Classrooms with interactive Promethean Boards",
     ],
-    image: `${imageBaseUrl}/lab_8.jpg`,
-    imageAlt: "Science laboratory facilities at Petal Girls School",
+    image: labImage,
+    imageAlt: "Science laboratory facilities at Petal Girls Senior School",
   },
   {
     title: "Sports Facilities",
     items: ["Shaded outdoor play areas", "Art, Music and Drama room"],
-    image: `${imageBaseUrl}/games_7.jpg`,
+    image: gamesImage,
     imageAlt: "Students taking part in school sports and activities",
   },
 ];
@@ -25,9 +26,9 @@ const Facilities = () => (
   <div className="facilities-page">
     <div
       className="facilities-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/class_4.jpg")` }}
+      style={{ backgroundImage: `url("${classroomImage}")` }}
       role="img"
-      aria-label="Learning at Petal Girls School"
+      aria-label="Learning at Petal Girls Senior School"
     />
 
     <div className="container facilities-page__content">

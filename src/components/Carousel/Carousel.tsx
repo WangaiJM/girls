@@ -7,11 +7,11 @@ import labSecondImage from "../../assets/images/lab_2.jpg";
 import staffImage from "../../assets/images/staff_3.jpg";
 
 const slides = [
-  { src: staffImage, alt: "Petal Girls School staff" },
+  { src: staffImage, alt: "Petal Girls Senior School staff" },
   { src: agriImage, alt: "Students learning through agriculture" },
   { src: labImage, alt: "Students working in the science laboratory" },
   { src: gamesImage, alt: "Students taking part in school games" },
-  { src: labSecondImage, alt: "Science learning at Petal Girls School" },
+  { src: labSecondImage, alt: "Science learning at Petal Girls Senior School" },
 ];
 
 const Carousel = () => {
@@ -70,7 +70,7 @@ const Carousel = () => {
         rel="noopener noreferrer"
         aria-label="Visit Petal Ladies Vocational Training Centre website (opens in a new tab)"
       >
-        Visit Our College
+        Visit Petal Ladies VTC
         <span aria-hidden="true"> ↗</span>
       </a>
     </section>

@@ -1,5 +1,8 @@
 import "./about.scss";
-const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
+import agricultureImage from "../../assets/images/agri_10.jpg";
+import assemblyImage from "../../assets/images/community_2.jpg";
+import communityImage from "../../assets/images/community_1.jpg";
+import graduateImage from "../../assets/images/graduate_3.jpg";
 
 const parentInvolvement = [
   {
@@ -20,7 +23,7 @@ const About = () => (
   <div className="about-page">
     <section
       className="about-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/agri_10.jpg")` }}
+      style={{ backgroundImage: `url("${agricultureImage}")` }}
       role="img"
       aria-label="Students at Petal Girls Senior School"
     />
@@ -50,7 +53,7 @@ const About = () => (
         </div>
         <img
           className="about-section__image"
-          src={`${imageBaseUrl}/graduate_3.jpg`}
+          src={graduateImage}
           alt="Petal Girls students celebrating their achievements"
         />
       </section>
@@ -78,8 +81,8 @@ const About = () => (
         </div>
         <img
           className="about-section__image"
-          src={`${imageBaseUrl}/additions/assembly2.jpg`}
-          alt="Students gathered at a Petal Girls School assembly"
+          src={assemblyImage}
+          alt="Students gathered at a Petal Girls Senior School assembly"
         />
       </section>
 
@@ -106,7 +109,7 @@ const About = () => (
           <h2>Parent Involvement at Petal Girls Senior School</h2>
           <img
             className="about-section__image about-section__image--inline"
-            src={`${imageBaseUrl}/community_1.jpg`}
+            src={communityImage}
             alt="Parents and members of the school community meeting together"
           />
           <p>

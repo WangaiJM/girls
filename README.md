@@ -1,8 +1,8 @@
-# Petal Girls School
+# Petal Girls Senior School
 
 **With God We Triumph**
 
-Petal Girls School provides education and opportunities for girls in the community. Its work includes Petal Girls Senior School and Petal Vocational Training Centre. We aim to create a safe, supportive environment where learners can build knowledge, confidence, practical skills, and opportunities for the future.
+Petal Girls Senior School provides education and opportunities for girls in the community, alongside Petal Vocational Training Centre. We aim to create a safe, supportive environment where learners can build knowledge, confidence, practical skills, and opportunities for the future.
 
 ## Our Mission
 

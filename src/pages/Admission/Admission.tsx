@@ -1,5 +1,6 @@
 import "./admission.scss";
-const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
+import groundsImage from "../../assets/images/layout.jpg";
+import studentsImage from "../../assets/images/girls_1.jpg";
 
 const feeTerms = [
   {
@@ -47,7 +48,7 @@ const Admission = () => (
   <div className="admission-page">
     <div
       className="admission-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/girls_1.jpg")` }}
+      style={{ backgroundImage: `url("${studentsImage}")` }}
       role="img"
       aria-label="Students at Petal Girls Senior School"
     />
@@ -108,7 +109,7 @@ const Admission = () => (
         </div>
         <img
           className="admission-overview__image"
-          src={`${imageBaseUrl}/additions/grounds.jpg`}
+          src={groundsImage}
           alt="Grounds at Petal Girls Senior School"
         />
       </section>

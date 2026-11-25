@@ -1,6 +1,6 @@
 import "./donation.scss";
-
-const imageBaseUrl = "https://petalgirlsschool.ac.ke/images";
+import donationBannerImage from "../../assets/images/donate2.jpg";
+import donationStudentImage from "../../assets/images/donate1.jpg";
 
 const waysToHelp = [
   {
@@ -64,9 +64,9 @@ const Donation = () => (
   <div className="donation-page">
     <div
       className="donation-page__banner"
-      style={{ backgroundImage: `url("${imageBaseUrl}/donate2.jpg")` }}
+      style={{ backgroundImage: `url("${donationBannerImage}")` }}
       role="img"
-      aria-label="Support education at Petal Girls School"
+      aria-label="Support education at Petal Girls Senior School"
     />
 
     <div className="container donation-page__content">
@@ -85,7 +85,7 @@ const Donation = () => (
         </div>
         <img
           className="donation-intro__image"
-          src={`${imageBaseUrl}/donate1.jpg`}
+          src={donationStudentImage}
           alt="A student whose education is supported by the school community"
         />
       </section>
